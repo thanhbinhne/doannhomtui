@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Kinh Doanh - G09</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Trang chủ</a></li>
+            <li><a href="#">Góc học tập</a>
+                <ul>
+                    <li><a href="#" onclick="showPage('html_js')">HTML & Javascript</a></li>
+                    <li><a href="#" onclick="showPage('style')">Style</a></li>
+                    <li><a href="#" onclick="showPage('xml_dom')">XML & DOM</a></li>
+                    <li><a href="#" onclick="showPage('json')">JSON</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a>
+                <ul>
+                    <li><a href="#" onclick="showEducationNews()">Tin tức giáo dục</a></li>
+                    <li><a href="#">Dự báo</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Đăng ký</a></li>
+        </ul>
+    </div>
+
+    <div id="content"></div>
+    <!-- /*Câu 8 -->
+    <div id="newsContent" style="display:none;">
+        <h3>Tin tức giáo dục mới nhất</h3>
+        <table id="newsTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tiêu đề</th>
+                </tr>
+            </thead>
+            <tbody id="newsList"></tbody>
+        </table>
+    </div>
+    
+<!-- Câu 10 -->
+    <div id="movingDiv">
+        <img src="images/bt.jpg" alt="Avatar" width="50" height="50">
+        <p>Bảo Trân - K224111473</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
