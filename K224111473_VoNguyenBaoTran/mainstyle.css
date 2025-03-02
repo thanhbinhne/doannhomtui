@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: rgb(199, 224, 178); /* Xanh nhạt */
+    border: 0.5px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#container ul {
+    list-style: none;
+    display: flex;
+}
+
+#container li {
+    position: relative;
+    border: 0.5px solid black;
+    text-align: center;
+}
+
+/* Cố định độ rộng để menu con và menu chính khớp nhau */
+#container li:nth-child(2), #container li:nth-child(3) {
+    width: 200px;
+}
+
+#container li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: rgb(199, 224, 178);
+}
+
+#container li a:hover {
+    background-color: yellow;
+}
+
+/* --- Menu con Góc học tập (màu cam nhạt) --- */
+#container li:nth-child(2) ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    z-index: 100;
+    border: 0.5px solid black;
+}
+
+#container li:nth-child(2):hover ul {
+    display: block;
+}
+
+#container li:nth-child(2) ul li {
+    background-color: rgb(252, 239, 228); /* Cam nhạt */
+    border: 0.5px solid black;
+    padding: 8px 0;
+}
+
+#container li:nth-child(2) ul li a {
+    background: rgb(252, 239, 228); /* Đồng bộ màu */
+}
+
+#container li:nth-child(2) ul li a:hover {
+    background-color: yellow; /* Hover vàng */
+}
+
+/* --- Menu con Tin tức (màu xanh biển nhạt) --- */
+#container li:nth-child(3) ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    z-index: 100;
+    border: 0.5px solid black;
+}
+
+#container li:nth-child(3):hover ul {
+    display: block;
+}
+
+#container li:nth-child(3) ul li {
+    background-color: rgb(183, 223, 248); /* Xanh biển nhạt */
+    border: 0.5px solid black;
+    padding: 8px 0;
+}
+
+#container li:nth-child(3) ul li a {
+    background: rgb(183, 223, 248); /* Đồng bộ màu */
+}
+
+#container li:nth-child(3) ul li a:hover {
+    background-color: yellow; /* Hover vàng */
+}
+
+/* Câu 8 */
+#newsContent {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background: #f9f9f9;
+}
+
+#newsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#newsTable th, #newsTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#newsTable th {
+    background-color: rgb(199, 224, 178);
+    font-weight: bold;
+    text-align: center;
+}
+
+#newsTable tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#newsTable a {
+    color: blue;
+    text-decoration: none;
+}
+
+#newsTable a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*Câu 10
+/* Div di chuyển */
+#movingDiv {
+    position: fixed;
+    top: 0;
+    left: 80%;
+    width: 200px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+#movingDiv img {
+    width:200px;
+    height:100px;
+    margin-bottom: 5px;
+}
